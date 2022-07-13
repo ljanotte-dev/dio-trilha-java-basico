@@ -14,17 +14,20 @@ public class ContaTerminal {
         
         System.out.println("\n");
         System.out.println("Programa: ");
+        System.out.println("\n");
         System.out.println("Por favor, digite o número da Agência !");
         System.out.print("Agência: ");
         String agencia = sc.nextLine();
         System.out.println("Por favor, digite o número da Conta !");
         System.out.print("Numero: ");
         int numero = sc.nextInt();
-        System.out.println("Por favor, digite o Nome Completo !");
+        System.out.println("Por favor, digite seu Nome Completo !");
         System.out.print("Nome: ");
+        sc.nextLine();
         String nomeCompleto = sc.nextLine();
         System.out.println("\n");
         System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$%.2f já está disponível para saque.", nomeCompleto, agencia, numero, saldo);
+        System.out.println("\n");
 
 
         sc.close();
